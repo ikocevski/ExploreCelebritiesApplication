@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Celebrities</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+<header>
+    <h1>Explore Celebrities</h1>
+    <p>Discover information about famous personalities and their birthplaces</p>
+</header>
+<main>
+    <div class="search-container">
+        <form id="searchForm">
+            <input type="text" id="celebrityName" placeholder="Enter celebrity's name">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <div class="map-container">
+        <div id="map"></div>
+        <div class="map-caption">Birthplace</div>
+    </div>
+
+    <div class="celebrity-container">
+        <div class="celebrity-info-container">
+            <div id="celebrityInfo"></div>
+        </div>
+        <div class="celebrity-image-container">
+            <img id="celebrityImage" src="" alt="">
+        </div>
+    </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
